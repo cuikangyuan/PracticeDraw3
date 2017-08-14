@@ -32,7 +32,8 @@ public class Practice09SetTextScaleXView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-
+        //文字胖瘦
+        paint.setTextScaleX(1.2f);
         canvas.drawText(text, 50, 100, paint);
     }
 }

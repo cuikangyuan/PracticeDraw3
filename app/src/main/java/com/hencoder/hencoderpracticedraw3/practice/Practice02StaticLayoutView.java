@@ -39,7 +39,7 @@ public class Practice02StaticLayoutView extends View {
         //canvas.drawText(text, 50, 100, textPaint);
         canvas.save();
         canvas.translate(50, 100);
-        StaticLayout staticLayout = new StaticLayout(text, textPaint, 60 , Layout.Alignment.ALIGN_NORMAL, 1, 0, true);
+        StaticLayout staticLayout = new StaticLayout(text, textPaint, 600 , Layout.Alignment.ALIGN_NORMAL, 1, 0, true);
         staticLayout.draw(canvas);
         canvas.restore();
     }
