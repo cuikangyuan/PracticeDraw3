@@ -12,7 +12,7 @@ import android.view.View;
 
 public class Practice02StaticLayoutView extends View {
     TextPaint textPaint = new TextPaint(Paint.ANTI_ALIAS_FLAG);
-    String text = "Hello\nHenCoder";
+    String text = "HelloHelloHello1\nHelloHelloHello2\nHenCoder";
 
     public Practice02StaticLayoutView(Context context) {
         super(context);
@@ -37,9 +37,11 @@ public class Practice02StaticLayoutView extends View {
         // 使用 StaticLayout 代替 Canvas.drawText() 来绘制文字，
         // 以绘制出带有换行的文字
         //canvas.drawText(text, 50, 100, textPaint);
+
+        //既可以在\n 处换行 也可以通过限定最大宽度换行
         canvas.save();
         canvas.translate(50, 100);
-        StaticLayout staticLayout = new StaticLayout(text, textPaint, 600 , Layout.Alignment.ALIGN_NORMAL, 1, 0, true);
+        StaticLayout staticLayout = new StaticLayout(text, textPaint, 100 , Layout.Alignment.ALIGN_NORMAL, 1, 0, true);
         staticLayout.draw(canvas);
         canvas.restore();
     }
