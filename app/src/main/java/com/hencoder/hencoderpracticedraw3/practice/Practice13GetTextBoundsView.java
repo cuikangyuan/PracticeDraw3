@@ -44,16 +44,22 @@ public class Practice13GetTextBoundsView extends View {
         Rect rect = new Rect();
         paint2.getTextBounds(text1, 0, text1.length(), rect);
         yOffset[0] = -(rect.bottom + rect.top) / 2;
+        Log.d("yOffset1", "yOffset[0]: " + yOffset[0]);
         paint2.getTextBounds(text2, 0, text2.length(), rect);
         yOffset[1] = -(rect.bottom + rect.top) / 2;
+        Log.d("yOffset1", "yOffset[1]: " + yOffset[1]);
         paint2.getTextBounds(text3, 0, text3.length(), rect);
         yOffset[2] = -(rect.bottom + rect.top) / 2;
+        Log.d("yOffset1", "yOffset[2]: " + yOffset[2]);
         paint2.getTextBounds(text4, 0, text4.length(), rect);
         yOffset[3] = -(rect.bottom + rect.top) / 2;
+        Log.d("yOffset1", "yOffset[3]: " + yOffset[3]);
         paint2.getTextBounds(text5, 0, text5.length(), rect);
         yOffset[4] = -(rect.bottom + rect.top) / 2;
+        Log.d("yOffset1", "yOffset[4]: " + yOffset[4]);
         paint2.getTextBounds(text6, 0, text6.length(), rect);
         yOffset[5] = -(rect.bottom + rect.top) / 2;
+        Log.d("yOffset1", "yOffset[5]: " + yOffset[5]);
     }
 
     @Override
